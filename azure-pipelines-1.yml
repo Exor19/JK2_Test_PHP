@@ -25,13 +25,6 @@ steps:
 - script: composer install --no-interaction --prefer-dist
   displayName: 'composer install'
 
-- script: sudo chmod 0755 ./phpunit
-  displayName: 'Make phpunit script runnable'
-
-
-- script: ./phpunit
-  displayName: 'Run tests with phpunit'
-  continueOnError: true
 
 
 
