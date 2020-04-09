@@ -31,3 +31,7 @@ steps:
     archiveType: 'tar'
     archiveFile: 'foot.tgz'
     replaceExistingArchive: false
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'test'
+    testRunTitle: 'test'
